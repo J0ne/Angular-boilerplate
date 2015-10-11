@@ -7,7 +7,7 @@
 * Install [Node](https://nodejs.org/en/)
 * Install [Bower](http://bower.io/) by running `npm install -g bower`
 * Install [Gulp](http://gulpjs.com/) by running `npm install --global gulp`
-* Go to the cloned repository folder and run `npm install` and `bower install`
+* Go to the cloned repository folder and run `npm install`
 * Start the development server by running `npm start`
   * Server will be running at [http://localhost:3000](http://localhost:3000)
 * **Learn angular [here](https://docs.angularjs.org/tutorial)**
