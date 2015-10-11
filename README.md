@@ -10,7 +10,7 @@
 * Go to the cloned repository folder and run `npm install`
 * Start the development server by running `npm start`
   * Server will be running at [http://localhost:3000](http://localhost:3000)
-* **Learn angular [here](https://docs.angularjs.org/tutorial)**
+* **Learn Angular [here](https://docs.angularjs.org/tutorial)**
 
 ## Workflow
 
@@ -39,6 +39,7 @@ Tests can be executed by running `npm test`. `karma.conf.js` has the [Karma](htt
 
 ## Heroku deployment
 
+* **[Sign up](https://signup.heroku.com/login) to Heroku**
 * Install [Heroku toolbelt](https://toolbelt.heroku.com/)
 * Run `heroku login`
 * Go to the cloned repository folder and run `heroku create`
