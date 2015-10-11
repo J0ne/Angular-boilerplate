@@ -35,6 +35,7 @@ Tests can be executed by running `npm test`. `karma.conf.js` has the [Karma](htt
 ### Tips :thumbsup:
 
 * You can read more about how to test your Angular application [here](https://docs.angularjs.org/guide/unit-testing)
+* Read more about Karma configurations [here](http://karma-runner.github.io/0.13/config/configuration-file.html)
 * It's highly recommended to use a [travis](https://github.com/yeoman/generator-angular) as a CI-server
 
 ## Heroku deployment
