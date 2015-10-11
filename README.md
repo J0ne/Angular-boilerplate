@@ -14,7 +14,7 @@
 
 ## Workflow
 
-All files are in the `public` folder. `public/index.html` file has the initial view. Script files are in the `public/app` folder. Application module is located in the `public/app/main.js` file. Example controller can be found in the `public/app/controller/todo-list.controller.js` file.
+All files are in the `public` folder. `public/index.html` file has the initial view. Script files are in the `public/app` folder. Application module is located in the `public/app/main.js` file. Example controller can be found in the `public/app/controllers/todo-list.controller.js` file.
 
 `gulpfile.js` has the [Gulp](http://gulpjs.com/) configuration. When you start developing your Angular application run `gulp serve`. After running the `serve` task, all script files in the `public/app` folder will be watched and when changed, script files will be minified into `public/dist/scripts.min.js` file.
 

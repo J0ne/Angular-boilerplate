@@ -16,7 +16,7 @@ module.exports = function(config) {
     files: [
       'public/bower_components/angular/angular.min.js',
       'public/dist/scripts.min.js',
-      'public/tests/**/*.js'
+      'tests/**/*.js'
     ],
 
 
