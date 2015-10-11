@@ -19,3 +19,11 @@ All files are in the `public` folder. `public/index.html` file has the initial v
 ## Tests
 
 Tests can be executed by running `npm test`. `karma.conf.js` has the [Karma](http://karma-runner.github.io/0.13/index.html) configuration which loads `public/dist/scripts.js` file and `public/bower_components/angular/angular.min.js` file into the browser and runs the tests in `tests` folder. **Change this configuration when you add dependencies to your application**.
+
+## Heroku deployment
+
+* Install [Heroku toolbelt](https://toolbelt.heroku.com/)
+* Go to the cloned repository folder and run `heroku login`
+* Run `heroku create`
+* Run `git push heroku master`
+* Run `heroku open`
