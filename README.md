@@ -1,5 +1,7 @@
 # Angular boilerplate
 
+:exclamation: **Heads up!** Only tested with OS X and Linux. 
+
 ## Getting started
 
 
