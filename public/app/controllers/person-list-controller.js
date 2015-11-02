@@ -1,7 +1,5 @@
 (function(){
 
-	 var app = angular.module('UPayApp',['firebase']);
-
 	 app.factory("personList", ["$firebaseArray",
   		function($firebaseArray) {
     	// create a reference to the database location where we will store our data
@@ -31,7 +29,7 @@
     		};
    		}]);
     })();
-    
+
  //    usersRef.push().set({
  //      reissu: {
  //        payer: "Jouni",
