@@ -61,10 +61,15 @@
        
       </form>
 
-       <ul class="list-group">
-          <li class="list-group-item" ng-repeat="person in persons">{{person.name}}</li>
+       <ul class="list-group" ng-controller="PaymentController">
+          <li class="list-group-item" ng-repeat="person in persons">{{person.name}} 
+          <span class="badge">{{person.sum}}</span>
+          <!-- <input ng-model="sum" ng-change="updateSum(person.$id)" type="number" name="" value="" placeholder="sum"> {{result}}</li> -->
         </ul>
-    </div> 
+    </div class="container" ng-controller="PaymentController">
+    <div>
+       
+     </div> 
   
   </body>
 </html>

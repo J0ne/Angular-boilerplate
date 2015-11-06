@@ -21,7 +21,9 @@
     		// calling $add on a synchronized array is like Array.push(),
 			// except that it saves the changes to our database!
       			$scope.persons.$add({
-      				name: $scope.person
+      				name: $scope.person,
+              sum: 0
+
         		});
       		// reset the message input
       			$scope.person = "";
