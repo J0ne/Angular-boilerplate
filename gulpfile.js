@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
+var gutil = require('gulp-util');
 
 var SCRIPTS_FOLDER = 'public/app';
 var DEST_FOLDER = 'public/dist';
@@ -10,7 +11,7 @@ var MIN_SCRIPTS_FILE = 'scripts.min.js'
 gulp.task('scripts', function(){
   return gulp.src([SCRIPTS_FOLDER + '/main.js', SCRIPTS_FOLDER + '/**/*.js'])
     .pipe(concat(MIN_SCRIPTS_FILE))
-    .pipe(uglify())
+    .pipe(uglify().on('error', gutil.log))
     .pipe(gulp.dest(DEST_FOLDER));
 });
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Todo App</title>
+    <title>uPay</title>
 
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
@@ -50,7 +50,11 @@
       </form>
     </div> -->
 
+<<<<<<< HEAD
         <div class="container" ng-controller="PersonListController as persons">
+=======
+    <div class="container" ng-controller="PersonListController as persons">
+>>>>>>> bf51df2b2a61ab8108a580a5fbc6fe92194ac507
       <form ng-hide="persons.length > 3" ng-submit="addPerson()">
         <div class="form-group">
           <input type="text" ng-model="person" placeholder="Name" class="form-control">
@@ -59,9 +63,19 @@
         <button type="submit" class="btn btn-success">Add person</button>
        
       </form>
+<<<<<<< HEAD
        <ul class="list-group">
           <li class="list-group-item" ng-repeat="person in persons">{{person.name}}</li>
         </ul>
     </div> 
+=======
+      <ul class="list-group">
+          <li class="list-group-item" ng-repeat="person in persons">{{person.name}}</li>
+      </ul>
+    </div>
+<!--     <div class="container" ng-controller="PaymentListController as payments">
+      <form ng-submit="addPayment()"></form>
+    </div>  -->
+>>>>>>> bf51df2b2a61ab8108a580a5fbc6fe92194ac507
   </body>
 </html>
