@@ -1,4 +1,4 @@
-var app = angular.module('UPayApp', ['firebase','ui.bootstrap']);
+
 
 
 (function() {
@@ -22,6 +22,7 @@ var app = angular.module('UPayApp', ['firebase','ui.bootstrap']);
  //  }
  //    });
  //    console.log(usersRef.key()); 
+ var app = angular.module('UPayApp', ['firebase','ui.bootstrap']);
 })();
 	    
 

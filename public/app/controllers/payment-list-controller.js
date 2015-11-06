@@ -1,4 +1,5 @@
 (function(){
+	var app = angular.module('UPayApp');
 	app.factory("paymentList", ["$firebaseArray",
   		function($firebaseArray) {
     	// create a reference to the database location where we will store our data
@@ -7,7 +8,7 @@
    			 // this uses AngularFire to create the synchronized array
     		return $firebaseArray(ref);
   		}
-]);
+	]);
 
 	app.controller("PersonListController", ["$scope", "paymentList",
   		// we pass our new chatMessages factory into the controller
