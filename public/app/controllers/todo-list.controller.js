@@ -1,5 +1,5 @@
 (function(){
-  angular.module('todoApp')
+  angular.module('UPayApp')
     .controller('TodoListController', ['$scope', TodoListController])
 
   function TodoListController($scope){
