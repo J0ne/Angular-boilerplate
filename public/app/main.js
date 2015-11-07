@@ -3,7 +3,7 @@
 
 (function() {
 
- var app = angular.module('UPayApp', ['firebase','ui.bootstrap']);
+ var app = angular.module('UPayApp', ['firebase','ui.bootstrap','ui.router']);
 
 })();
 	
@@ -30,6 +30,9 @@
 
 // perjantai paja: 15:15 - 16 GitHub-kondikseen
 // perjantai 16:45 - 19:00 vihdoin taas eteenpäin
+
+// lauantai 9 - 11 toteutusta payment form
+// -
 
 
  

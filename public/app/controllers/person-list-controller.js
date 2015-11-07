@@ -29,6 +29,9 @@
       			$scope.person = "";
 
     		};
+        // $scope.initPayment = function(payer){
+        //   $scope.payment.active = true; 
+        // }
    		}]);
     })();
 
