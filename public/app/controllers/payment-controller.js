@@ -1,13 +1,5 @@
 (function(){
 	var app = angular.module('UPayApp');
-	// app.config(function config($stateProvider){
- // 	$stateProvider.state('index', {
- // 		url: "",
- // 		controller: "PaymentController",
- // 		templateUrl: "templates/payment.html"
- // 	}
- // 	)
- // 	});
 	app.factory("paymentList", ["$firebaseArray",
   		function($firebaseArray) {
     	// create a reference to the database location where we will store our data
@@ -25,16 +17,20 @@
 	   		// we add chatMessages array to the scope to be used in our ng-repeat
     		$scope.payments = paymentList;
     		this.active = false;
+    		this.shares = [];
+
     		// $scope.payment.description = '';
     		// $scope.payment.shares = [];
     		$scope.updateSum = function(id){
     			$scope.active = true;
     		}
 
-    		$scope.initPayment = function(id){
+    		$scope.initPayment = function(name, persons){
     			$scope.active = true;
-    			$scope.payment.name = id;
+    			$scope.payment.name = name;
+    			$scope.persons = persons;
     		}
+
     		// a method to create new messages; called by ng-submit
     		$scope.addPayment = function() {
     		// calling $add on a synchronized array is like Array.push(),
@@ -44,15 +40,8 @@
       				createdDate: Firebase.ServerValue.TIMESTAMP,
       				sum: $scope.payment.sum,
       				payer: $scope.payment.name,
-      				description: 'joku kuvaus', //$scope.payment.description,
-      				shares: [{
-      					Ile: 15,
-      					active: true
-      				},{
-      					Jouni: 15,
-      					active: true
-      				}]
-
+      				description: 'Maksettu: ' + Date.now(),//$scope.payment.description,
+      				shares: countShares($scope.payment.sum, $scope.payment.name, $scope.persons)
         		});
       		// reset the message input
       			$scope.payment = "";
@@ -60,5 +49,29 @@
 
     		};
    		}]);
+
+	function countShares(sum, payer, persons) {
+		console.log(sum + ' ' + payer + ' ' + persons);
+    	var shares = [];
+    	
+    	var sharePerPerson = sum / persons.length;
+    	$.each(persons, function(index,value){
+
+    		var active = true;
+    		if(payer == value.name){
+    			active = false;
+    		}
+    		
+    		var share = 
+    			{
+    				name: value.name,
+    				sum: sharePerPerson,
+    				active: active
+    			}
+    		shares.push(share);
+    	});
+    	console.log("Jaot: " + shares[0].sum + " / hlö");
+    	return shares;
+    }
 })();
 

@@ -39,10 +39,11 @@
       </form>
 
        <ul class="list-group">
-          <li ng-click="$parent.initPayment(person.name)" class="list-group-item" ng-repeat="person in persons">{{person.name}} 
+          <li ng-click="$parent.initPayment(person.name, persons)" class="list-group-item" ng-repeat="person in persons">{{person.name}} 
           <span class="badge">{{person.sum}}</span> </ul>
      </div>
      <div class="form-group" ng-show="active">
+      <input type="hidden" name="" value="">
          <input type="text" name="" ng-model="payment.name" value="" placeholder="">
         <input type="number" name="" ng-model="payment.sum" value="" placeholder="sum" min="0">
         <button ng-click="addPayment()" type="submit" class="btn btn-success">Add new payment!</button>
