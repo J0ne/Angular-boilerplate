@@ -2,29 +2,16 @@
 
 
 (function() {
- //     var myFirebaseRef = new Firebase("https://dazzling-torch-7927.firebaseio.com/");
 
- //    myFirebaseRef.child("rest/uusi").on("value", function(snapshot) {
-  		
-	// });
-
-	//  var usersRef = myFirebaseRef.child("rest/project1");
- //    usersRef.push().set({
- //      reissu: {
- //        payer: "Jouni",
- //        summa: 15
- //      }
- //    }, function(error){
- //    	  if (error) {
- //    alert("Data could not be saved." + error);
- //  } else {
- //    alert("Tiedot tallennettu. Avain: " + usersRef.key());
- //  }
- //    });
- //    console.log(usersRef.key()); 
  var app = angular.module('UPayApp', ['firebase','ui.bootstrap']);
+
 })();
-	    
+	
+	/* jQuery */
+
+// $('ul.list-group li').on('click', function(){
+// 	alert("Jep");
+// })    
 
    // var myFirebaseRef = new Firebase("https://dazzling-torch-7927.firebaseio.com/");
 

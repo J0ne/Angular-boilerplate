@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>uPay</title>
-
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
@@ -32,7 +33,7 @@
       <form ng-submit="addTodo()">
         <div class="form-group">
           <input type="text" ng-model="newTodo" placeholder="New todo" class="form-control">
-        </div>
+        </div>  
 
         <button type="submit" class="btn btn-success">Add todo</button>
       </form>
@@ -61,10 +62,10 @@
        
       </form>
 
-       <ul class="list-group" ng-controller="PaymentController">
+       <ul class="list-group">
           <li class="list-group-item" ng-repeat="person in persons">{{person.name}} 
           <span class="badge">{{person.sum}}</span>
-          <!-- <input ng-model="sum" ng-change="updateSum(person.$id)" type="number" name="" value="" placeholder="sum"> {{result}}</li> -->
+
         </ul>
     </div class="container" ng-controller="PaymentController">
     <div>
