@@ -24,9 +24,9 @@
     <![endif]-->
   </head>
   <body>
-    <header id="header" class="jumbotron">
+    <div id="header" class="jumbotron">
        <h1>uPay</h1>
-    </header>
+    </div>
     <div class="container" ng-controller="PaymentController as payment">
     <div class="container" ng-controller="PersonListController as persons">
       <form ng-hide="persons.length > 3" ng-submit="addPerson()">
@@ -40,7 +40,9 @@
 
        <ul class="list-group">
           <li ng-click="$parent.initPayment(person.name, persons)" class="list-group-item" ng-repeat="person in persons">{{person.name}} 
-          <span class="badge">{{person.sum}}</span> </ul>
+          <span class="badge">{{person.sum}}</span> 
+          </li>
+          </ul>
      </div>
      <div class="form-group" ng-show="active">
       <input type="hidden" name="" value="">
@@ -48,8 +50,16 @@
         <input type="number" name="" ng-model="payment.sum" value="" placeholder="sum" min="0">
         <button ng-click="addPayment()" type="submit" class="btn btn-success">Add new payment!</button>
      </div>
-
-
+    <ul class="list-group">
+      <li class="list-group-item nav nav-pills" ng-repeat="item in payments">
+        <h2>{{(item.sum | number:2) +'€'}}</h2>
+        <span class="badge">{{item.payer}}</span>
+          <ul class="list-inline">
+            <li ng-show="share.active" ng-repeat="share in item.shares">
+            {{share.name}}: osuus: {{(share.sum| number:2) +'€'}}</li>
+          </ul>
+      </li>
+    </ul>
     </div>
      <!-- <ui-view></ui-view>
    -->
