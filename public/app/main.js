@@ -59,7 +59,9 @@
 // perjantai 16:45 - 19:00 vihdoin taas eteenpäin
 
 // lauantai 9 - 11 toteutusta payment form
-// lauantai 13 - 17 paymentin tallennus, osuuksien (share) laskenta 
+// lauantai 13 - 17 paymentin tallennus, osuuksien (share) laskenta
+
+// sunnuntai 15 - 18 
 
 
  
