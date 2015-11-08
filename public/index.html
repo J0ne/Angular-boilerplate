@@ -57,7 +57,7 @@
           <ul class="list-inline">
             <li ng-repeat="share in item.shares">
             <span ng-model="share.active" ng-class="{'payment-pill-red': share.active, 'payment-pill': !share.active }" >{{share.name}}: {{(share.sum| number:2) +'€'}}
-             <input type="checkbox" ng-model="share.active" ng-change="changeActivity(item.$id, $index, share.active)" /></span>
+             <input ng-hide="share.name==item.payer" type="checkbox" ng-model="share.active" ng-change="changeActivity(item.$id, $index, share.active)" /></span>
             </li>
           </ul>
       </li>

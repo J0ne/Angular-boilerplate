@@ -62,6 +62,7 @@
 // lauantai 13 - 17 paymentin tallennus, osuuksien (share) laskenta
 
 // sunnuntai 15 - 18 
+// sunnuntai 20 - 22
 
 
  
