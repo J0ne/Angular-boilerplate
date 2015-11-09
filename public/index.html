@@ -39,8 +39,10 @@
       </form>
 
        <ul class="list-group">
-          <li ng-click="$parent.initPayment(person.name, persons)" class="list-group-item person" ng-repeat="person in persons">{{person.name}}
-          
+          <li ng-click="$parent.initPayment(person.name, persons)" class="list-group-item person" ng-repeat="person in persons">
+           
+            <strong>{{person.name}}</strong>
+          <button class="btn btn-default" ng-click="persons.$remove(person)"><span class="glyphicon glyphicon-remove"></span></button>
           </li>
           </ul>
      </div>
@@ -52,6 +54,7 @@
      </div>
     <ul class="list-group">
       <li class="list-group-item nav nav-pills" ng-repeat="item in payments">
+      
         <h2>{{(item.sum | number:2)+'€'}}</h2>
         <p>{{item.description}}</p>
           <ul class="list-inline">
@@ -60,6 +63,7 @@
              <input ng-hide="share.name==item.payer" type="checkbox" ng-model="share.active" ng-change="changeActivity(item.$id, $index, share.active)" /></span>
             </li>
           </ul>
+            <button class="btn btn-default glyphicon glyphicon-remove btn-upay" ng-click="payments.$remove(item)"></button>
       </li>
     </ul>
     </div>

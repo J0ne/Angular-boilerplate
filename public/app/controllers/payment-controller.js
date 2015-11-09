@@ -19,8 +19,14 @@
     		$scope.payments = paymentList;
     		this.active = false;
     		this.shares = [];
+    		
 
+    		var init = function (){
+    			console.log("Hep")
+ 			   getSaldos();
+			}
 
+			//$scope.init();
     		// $scope.payment.description = '';
     		// $scope.payment.shares = [];
     		$scope.updateSum = function(id){
@@ -32,6 +38,7 @@
     			$scope.active = true;
     			$scope.payment.name = name;
     			$scope.persons = persons;
+    			getSaldos($scope.payments);
     		}
 
     		$scope.changeActivity = function(payment, index, value){
@@ -57,9 +64,11 @@
       				shares: countShares($scope.payment.sum, $scope.payment.name, $scope.persons)
         		}).then(function() {
         alert('Payment saved!');
+        
       }).catch(function(error) {
         alert('Error!');
-      });;
+      });
+      
       		// reset the message input
       			$scope.payment.name = "";
       			$scope.payment.sum = 0;
@@ -87,15 +96,25 @@
     			}
     		shares.push(share);
     	});
-    	console.log("Jaot: " + shares[0].sum + " / hlö");
     	return shares;
     }
 
-    function getSaldos(person, payments){
-    	var sharesTotal = {};
-    	$.each(payments, function(index,value){
+    function getSaldos(payments){
 
-    		
+    	var sharesTotal = {};
+    	var debtTo = [];
+    	console.log("payments: " + this.payments)
+    	$.each(payments, function(index,payment){
+    		var shares = payment.shares;
+    		var payer = payment.name;
+    		debtTo.push(payer);
+    		$.each(shares, function(index1,share){
+    		if(share.name!=payer){
+    			debtTo[payer]+=share.sum;
+    		}
+    	});
+    		console.log(debtTo);
+    		return debtTo;
     	});
     }
 })();

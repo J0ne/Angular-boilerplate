@@ -16,6 +16,7 @@ ul.list-group li:hover{
 	border-radius: 4px;
 	margin: 5px;
 	cursor: pointer;
+	border: 1px solid black;
 }
 .payment-pill-red{
 	background-color: red;
@@ -23,5 +24,11 @@ ul.list-group li:hover{
 	padding: 5px;
 	border-radius: 4px;
 	margin: 5px;
-	cursor: pointer;
+	cursor: pointer;	
+	border: 1px solid black;
+}
+
+.btn-upay{
+	float: right;
+	clear: both;
 }
