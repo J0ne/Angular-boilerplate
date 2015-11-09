@@ -5,9 +5,9 @@
 ## Idea
 Porukalla reissussa? Joku maksaa ravintolassa aterian, joku matkaliput.
 
-Saunailta. Joku ostaa lihat, joku limonadit(!)...
+Saunailta? Joku ostaa lihat, joku limonadit(!)...
 
-uPayhin lisätään henkilöt. Henkilö klikkaamalla avautuu lomake maksun syöttämistä varten: 
+uPayhin lisätään henkilöt. Henkilöä klikkaamalla avautuu lomake maksun syöttämistä varten: 
 * klikattu henkilö on maksajana
 * syöteään summa
 * tallennus
@@ -18,3 +18,4 @@ Idea on tehdä yhteenveto henkilöiden välisistä maksutilanteista. Kukan jäi 
 
 Yhteenveto: todo...
 
+Muuta: kirjautuminen, "lisää uusi..." (lomareissu, saunailta, parisuhde)
