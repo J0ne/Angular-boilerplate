@@ -1,6 +1,4 @@
-# uPay - kirjanpito
-
-
+# Angular.js - harjoitustyö eli uPay
 
 ## Idea
 
