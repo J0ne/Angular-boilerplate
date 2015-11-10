@@ -7,8 +7,8 @@
  29.10 to klo 18 - 19 Angular boilerplaten forkkaus ja gulp-opettelua			1h
  30.10 la 31.  gulp-video, aloitusta + firebasen opettelu säätöä klo 10 - 13 	3h
  1.11 su 13 - 19 toteutusta
- 2.11 ma 17 - 23 controller-säätöä: joku tökki aina meni pieleen kun yritin eriyttää controlleria omaan tiedostoon 6h
-
+ 2.11 ma 17 - 23 controller-säätöä: aina joku meni pieleen kun yritin eriyttää controlleria omaan tiedostoon 6h
+ 															
  4.11. ke 19 - 01 GitHubin kanssa säätöä, palautuksia zip-tiedostosta, kun en osannut käyttää githubia, kaikki tukossa! 6h
 
  6.11. perjantai paja: 15:15 - 16 GitHub-kondikseen					0.75h
